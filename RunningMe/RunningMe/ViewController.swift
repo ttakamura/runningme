@@ -9,17 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let player = Player()
+    var isPlaying: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
-        let instrument = AKInstrument()
+        AKOrchestra.addInstrument(player)
 
-        instrument.setAudioOutput(AKOscillator())
-        AKOrchestra.addInstrument(instrument)
-
-        instrument.play()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +24,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func play(sender: UIButton) {
+        if !isPlaying {
+            player.play()
+            isPlaying = true
+            sender.setTitle("Stop", forState: .Normal)
+        } else if isPlaying {
+            player.stop()
+            isPlaying = false
+            sender.setTitle("Play", forState: .Normal)
+        }
+    }
+    
+    @IBAction func rotate(sender: UISlider){
+        player.rotate(sender.value)
+    }
 }
 

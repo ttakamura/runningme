@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270E04CD1C3336F900AF04BA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E04CC1C3336F900AF04BA /* Player.swift */; };
+		270E04CE1C33397A00AF04BA /* run.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 270E04CB1C3335C800AF04BA /* run.m4a */; };
+		270E04D01C333A2B00AF04BA /* AKSoundFiles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 270E04CF1C333A2B00AF04BA /* AKSoundFiles.bundle */; };
+		270E04D21C333E2500AF04BA /* run.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 270E04D11C333E2500AF04BA /* run.mp3 */; };
+		270E04D41C33407700AF04BA /* running.wav in Resources */ = {isa = PBXBuildFile; fileRef = 270E04D31C33407700AF04BA /* running.wav */; };
 		27706E581C1396C90077D9A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27706E571C1396C90077D9A1 /* AppDelegate.swift */; };
 		27706E5A1C1396C90077D9A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27706E591C1396C90077D9A1 /* ViewController.swift */; };
 		27706E5D1C1396C90077D9A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27706E5B1C1396C90077D9A1 /* Main.storyboard */; };
@@ -72,6 +77,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270E04CB1C3335C800AF04BA /* run.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = run.m4a; sourceTree = "<group>"; };
+		270E04CC1C3336F900AF04BA /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		270E04CF1C333A2B00AF04BA /* AKSoundFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AKSoundFiles.bundle; sourceTree = "<group>"; };
+		270E04D11C333E2500AF04BA /* run.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = run.mp3; sourceTree = "<group>"; };
+		270E04D31C33407700AF04BA /* running.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = running.wav; sourceTree = "<group>"; };
 		27706E541C1396C90077D9A1 /* RunningMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27706E571C1396C90077D9A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27706E591C1396C90077D9A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,9 +152,13 @@
 		27706E561C1396C90077D9A1 /* RunningMe */ = {
 			isa = PBXGroup;
 			children = (
+				270E04D11C333E2500AF04BA /* run.mp3 */,
+				270E04CB1C3335C800AF04BA /* run.m4a */,
+				270E04D31C33407700AF04BA /* running.wav */,
 				27706E9B1C139A7C0077D9A1 /* AudioKit.swift */,
 				27706E571C1396C90077D9A1 /* AppDelegate.swift */,
 				27706E591C1396C90077D9A1 /* ViewController.swift */,
+				270E04CC1C3336F900AF04BA /* Player.swift */,
 				27706E5B1C1396C90077D9A1 /* Main.storyboard */,
 				27706E5E1C1396C90077D9A1 /* Assets.xcassets */,
 				27706E601C1396C90077D9A1 /* LaunchScreen.storyboard */,
@@ -152,6 +166,7 @@
 				27706E981C13988C0077D9A1 /* NSObject+Kitty.h */,
 				27706E991C13988C0077D9A1 /* NSObject+Kitty.m */,
 				27706E971C13988B0077D9A1 /* RunningMe-Bridging-Header.h */,
+				270E04CF1C333A2B00AF04BA /* AKSoundFiles.bundle */,
 			);
 			path = RunningMe;
 			sourceTree = "<group>";
@@ -254,6 +269,7 @@
 				TargetAttributes = {
 					27706E531C1396C90077D9A1 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = EJ3LHD8FL9;
 					};
 					27706E671C1396C90077D9A1 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -327,6 +343,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270E04D21C333E2500AF04BA /* run.mp3 in Resources */,
+				270E04D01C333A2B00AF04BA /* AKSoundFiles.bundle in Resources */,
+				270E04D41C33407700AF04BA /* running.wav in Resources */,
+				270E04CE1C33397A00AF04BA /* run.m4a in Resources */,
 				27706E621C1396C90077D9A1 /* LaunchScreen.storyboard in Resources */,
 				27706E5F1C1396C90077D9A1 /* Assets.xcassets in Resources */,
 				27706E5D1C1396C90077D9A1 /* Main.storyboard in Resources */,
@@ -357,6 +377,7 @@
 				27706E5A1C1396C90077D9A1 /* ViewController.swift in Sources */,
 				27706E581C1396C90077D9A1 /* AppDelegate.swift in Sources */,
 				27706E9A1C13988C0077D9A1 /* NSObject+Kitty.m in Sources */,
+				270E04CD1C3336F900AF04BA /* Player.swift in Sources */,
 				27706E9C1C139A7C0077D9A1 /* AudioKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,12 +524,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RunningMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = org.tkmr.RunningMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RunningMe/RunningMe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "/Users/tatsuya/Downloads/AudioKit-master/**";
@@ -520,12 +544,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RunningMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = org.tkmr.RunningMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RunningMe/RunningMe-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "/Users/tatsuya/Downloads/AudioKit-master/**";
 			};
@@ -598,6 +625,7 @@
 				27706E7E1C1396C90077D9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27706E7F1C1396C90077D9A1 /* Build configuration list for PBXNativeTarget "RunningMeTests" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +634,7 @@
 				27706E811C1396C90077D9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27706E821C1396C90077D9A1 /* Build configuration list for PBXNativeTarget "RunningMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -614,6 +643,7 @@
 				27706E841C1396C90077D9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

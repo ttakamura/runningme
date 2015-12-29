@@ -1,3 +1,7 @@
+AKSoundFiles.bundle
+*.mp3
+*.wav
+*.m4a
 
 # Created by https://www.gitignore.io/api/xcode,osx,swift
 

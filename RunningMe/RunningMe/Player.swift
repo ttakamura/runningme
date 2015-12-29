@@ -40,9 +40,8 @@ class Player: AKInstrument {
     }
     
     func rotate(value: Float){
-        // print("\(value)")
-        
-        self.elevation.value = value
+        //print("\(value)")
+        self.azimuth.value = value
         self.reverbFeedback.value = fabs(value)/360.0
         self.reverbLevel.value    = fabs(value)/360.0
     }
